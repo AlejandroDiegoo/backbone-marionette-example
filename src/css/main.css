@@ -1,0 +1,119 @@
+body > div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+
+#panel-region {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  background-color: #333;
+}
+
+#panel-region ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#panel-region ul li > div {
+  padding: 10px;
+  background: #222;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 0%, rgba(35, 35, 35, 0) 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#panel-region ul li > div a {
+  color: #fff;
+  font-size: 80%;
+}
+
+#panel-region ul li > div a > div {
+  padding-right: 10px;
+}
+
+#panel-region ul li > div a > div span {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#main-region {
+  background-color: rgb(51, 82, 113);
+  transform: translate3d(0, 0, 0);
+  transition: transform .5s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#main-region.isOpen {
+  transform: translate3d(300px, 0, 0);
+}
+
+#main-region #header-region {
+  background-color: rgba(0,0,0,.3);
+}
+
+#main-region #header-region section {
+  padding: 10px;
+}
+
+#main-region #header-region section a {
+  color: #FFF;
+  cursor: pointer;
+}
+
+#main-region #content-region {
+  position: relative;
+}
+
+#main-region #content-region > section {
+  padding: 20px;
+}
+
+#main-region #content-region > section h1 {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 120%;
+  color: #b7d8f9;
+}
+
+#preload-region {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(35, 56, 77);
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  #panel-region {
+    width: 250px;
+  }
+  #main-region.isOpen {
+    transform: translate3d(250px, 0, 0);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #panel-region {
+    width: 200px;
+  }
+  #main-region.isOpen {
+    transform: translate3d(200px, 0, 0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #panel-region {
+    width: 150px;
+  }
+  #main-region.isOpen {
+    transform: translate3d(150px, 0, 0);
+  }
+}

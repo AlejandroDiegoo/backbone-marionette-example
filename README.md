@@ -6,4 +6,4 @@ Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de te
 
   - <strong>Technologies:</strong> Backbone, Marionette, Underscore & Webpack.
   
-**Demo (only client):** https://codeluxestudio.com/github/backbone-marionette-example/static
+**Demo:** https://codeluxestudio.com/github/backbone-marionette-example/static

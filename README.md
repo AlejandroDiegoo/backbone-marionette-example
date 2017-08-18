@@ -6,7 +6,7 @@ It's a simple example to see how is working a little application developed with 
 
   - <strong>Technologies:</strong> Backbone, Marionette, Underscore & Webpack.
   
-**Demo:** https://codeluxestudio.com/github/backbone-marionette-example
+**Demo:** https://alejandrodiego.com/github/backbone-marionette-example
 
 ### Requires
 
